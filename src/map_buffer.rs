@@ -177,6 +177,8 @@ impl MapBuffer {
                 self.set_walkable(x, y, true);
             }
         }
+
+        self.corridors.push(corridor);
     }
 
     pub fn paint(&mut self, mode: Symmetry, brush_size: usize, x: usize, y: usize) {
